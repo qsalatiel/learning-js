@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Calculator</title>
+</head>
+<body>
+    <div>
+        <h1>SUM JS calculator</h1>
+        <input id="number-one" type="number" placeholder="Type a number">
+        <input id="number-two" type="number" placeholder="Type another number">
+        <input type="button" onclick="sum()" value="SUM">
+        <input type="button" onclick="rest()" value="Rest">
+        <input type="button" onclick="mult()" value="Multiply">
+        <input type="button" onclick="div()" value="Divide">
+    </div>
+    <script>
+        
+        
+        function sum() {
+            var numberOne, numberTwo, result;
+            numberOne = Number(document.getElementById("number-one").value);
+            numberTwo = Number(document.getElementById("number-two").value);
+
+            console.log(numberOne);
+            console.log(numberTwo);
+            
+            result = numberOne+numberTwo;
+            alert("The sum is " +result)
+        };
+        function rest() {
+            var numberOne, numberTwo, result;
+            numberOne = Number(document.getElementById("number-one").value);
+            numberTwo = Number(document.getElementById("number-two").value);
+
+            console.log(numberOne);
+            console.log(numberTwo);
+            
+            result = numberOne%numberTwo;
+            alert("The rest is " +result)
+        };
+        function mult() {
+            var numberOne, numberTwo, result;
+            numberOne = Number(document.getElementById("number-one").value);
+            numberTwo = Number(document.getElementById("number-two").value);
+
+            console.log(numberOne);
+            console.log(numberTwo);
+            
+            result = numberOne*numberTwo;
+            alert("The multiply result is " +result)
+        };
+        function div() {
+            var numberOne, numberTwo, result;
+            numberOne = Number(document.getElementById("number-one").value);
+            numberTwo = Number(document.getElementById("number-two").value);
+
+            console.log(numberOne);
+            console.log(numberTwo);
+            
+            result = numberOne/numberTwo;
+            alert("The divide result is " +result)
+        };
+    </script>
+</body>
+</html>
