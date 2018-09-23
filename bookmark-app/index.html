@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookmark app</title>
+</head>
+<body onload="fetchBookmarks();">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .box {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 20px;
+        }
+    </style>
+    <div class="box">
+        <h1>Bookmark you best favorite website</h1>
+        <form action="#" id="bookmarks" name="bookmarkForm">
+            <input type="text" id="bName" placeholder="name">
+            <input type="text" id="bURL" placeholder="url">
+            <button type="submit">Save website</button>
+        </form>
+    </div>
+    <br>
+    <div id="bookmarksResults"></div>
+    </body>
+    <script src="index.js"></script>
+</html>
